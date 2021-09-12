@@ -58,6 +58,7 @@ void Function_Init(void)
  */
 void System_Init(void)
 {
+  NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
 	Delay_init(168);// 1ms Systick
 	CRC_init();	
 	CAN1_Init();
